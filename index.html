@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form onsubmit="return validation()" method="POST">
+    <div class="main">
+    <div>
+      <input type="text" name="user" id="name" placeholder="Enter your Name"> &nbsp;
+      <span id="username" class="formation"></span>
+    </div>
+    <div>
+      <input type="email" name="email" id="email" placeholder="Enter Email"> &nbsp;
+      <span id="emailid" class="formation"></span>
+    </div>
+    <div>
+      <input type="password" name="pass" id="pass" placeholder="Enter Password"> &nbsp;
+      <span id="Password" class="formation"></span>
+    </div>
+    <div>
+      <input type="password" name="pass2" id="pass2" placeholder="Re-enter Password"> &nbsp;
+      <span id="Password2" class="formation"></span>
+    </div>
+    <div>
+      <input type="text" name="mobile" id="mobile" placeholder="Enter Mobile"> &nbsp;
+      <span id="mobileno" class="formation"></span>
+    </div>
+    <div>
+      <textarea cols="22" rows="4" placeholder="Enter Your Address"></textarea>
+    </div>
+    <div>
+      <input type="submit" name="submit" value="submit"></button>
+    </div>
+    </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
