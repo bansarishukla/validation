@@ -5,7 +5,6 @@ function validation() {
   var pass = document.getElementById('pass').value;
   var pass2 = document.getElementById('pass2').value;
   var mobile = document.getElementById('mobile').value;
-
   if (name === "") {
     document.getElementById('username').innerHTML = '**This feild is required';
     return false;
@@ -57,6 +56,9 @@ function validation() {
   if(mobile.length != 10) {
     document.getElementById('mobileno').innerHTML = 'Must write 10 digits';
     return false;
+  }
+  else{
+    alert("Data is successfully submitted");
   }
   return true;
 

@@ -2,38 +2,56 @@
   <head>
     <title>Welcome</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      function show() {
+        var name = document.getElementById('name').value;
+        localStorage.setItem("textvalue",name);
+        var email = document.getElementById('email').value;
+        localStorage.setItem("textvalue2",email);
+        var pass = document.getElementById('pass').value;
+        localStorage.setItem("textvalue3",pass);
+        var pass2 = document.getElementById('pass2').value;
+        var mobile = document.getElementById('mobile').value;
+        localStorage.setItem("textvalue4",mobile);
+        var address = document.getElementById('address').value;
+        localStorage.setItem("textvalue5",address);
+        return false;
+      }
+    </script>
   </head>
   <body>
-    <form onsubmit="return validation()" method="POST">
-    <div class="main">
+      <div class="main" id="write">
+    <form onsubmit="return validation()" method="GET" action="display.html">
+
     <div>
-      <input type="text" name="user" id="name" placeholder="Enter your Name"> &nbsp;
+      <input type="text" name="user" id="name" placeholder="Enter your Name">
       <span id="username" class="formation"></span>
     </div>
     <div>
-      <input type="email" name="email" id="email" placeholder="Enter Email"> &nbsp;
+      <input type="email" name="email" id="email" placeholder="Enter Email">
       <span id="emailid" class="formation"></span>
     </div>
     <div>
-      <input type="password" name="pass" id="pass" placeholder="Enter Password"> &nbsp;
+      <input type="password" name="pass" id="pass" placeholder="Enter Password">
       <span id="Password" class="formation"></span>
     </div>
     <div>
-      <input type="password" name="pass2" id="pass2" placeholder="Re-enter Password"> &nbsp;
+      <input type="password" name="pass2" id="pass2" placeholder="Re-enter Password">
       <span id="Password2" class="formation"></span>
     </div>
     <div>
-      <input type="text" name="mobile" id="mobile" placeholder="Enter Mobile"> &nbsp;
+      <input type="text" name="mobile" id="mobile" placeholder="Enter Mobile">
       <span id="mobileno" class="formation"></span>
     </div>
     <div>
-      <textarea cols="22" rows="4" placeholder="Enter Your Address"></textarea>
+      <input type="text" placeholder="Enter Your Address" id="address"></textarea>
     </div>
     <div>
-      <input type="submit" name="submit" value="submit"></button>
+      <input type="submit" name="submit" value="submit" onclick="show();"></button>
     </div>
-    </div>
+
     </form>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>

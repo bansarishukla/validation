@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Welcome</title>
+  </head>
+  <body>
+    Name: <span id="result"></span><br>
+    Email:<span id="result1"></span><br>
+    Password:<span id="result2"></span><br>
+    Mobile:<span id="result3"></span><br>
+    Address:<span id="result4"></span>
+    <script>
+       document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+      document.getElementById("result1").innerHTML=localStorage.getItem("textvalue2");
+      document.getElementById("result2").innerHTML=localStorage.getItem("textvalue3");
+      document.getElementById("result3").innerHTML=localStorage.getItem("textvalue4");
+      document.getElementById("result4").innerHTML=localStorage.getItem("textvalue5");
+    </script>
+  </body>
+</html>
